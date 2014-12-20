@@ -7,10 +7,10 @@ This contains a small command line utility that retrives information from the ya
 
 Installation
 =================
-`npm install colors`
-`npm install lodash`
-`npm install prompt`
-`npm install yahoo-finance`
+- `npm install colors`
+- `npm install lodash`
+- `npm install prompt`
+- `npm install yahoo-finance`
 
 Usage
 ==========
