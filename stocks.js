@@ -54,10 +54,10 @@ prompt.get('ticker', function(err, result){
   fields: FIELDS,
   symbol: SYMBOL
   }, function (err, snapshot) {
-    console.log(util.format('*** %s ***', SYMBOL).yellow);
-
+    console.log(util.format('*** %s ***', snapshot.name).yellow);
+ 
     // Add any error handling here..
-    if (err) { throw err; }
+    if (err) { console.error("Something went terribly wrong!"); }
 
     // Parses result JSON to stirng in SYMBOL var
     var change = JSON.stringify(snapshot.changeRealtime, null, 2);
