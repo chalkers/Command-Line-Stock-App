@@ -64,11 +64,10 @@ prompt.get('ticker', function(err, result){
 
     // Conditional to determine color based on change, then ouput.
     if (change > 0){
-    console.log(util.format('Change- %', snapshot.changeRealtime).green);
-    console.log('Price-- $' + snapshot.lastTradePriceOnly);
+      console.log(util.format('Change- %', snapshot.changeRealtime).green);
     } else { 
-    console.log(util.format('Change- %', snapshot.changeRealtime).red);
-    console.log('Price-- $' + snapshot.lastTradePriceOnly);
+      console.log(util.format('Change- %', snapshot.changeRealtime).red);
     }
+    console.log('Price-- $' + snapshot.lastTradePriceOnly);
   });
 });
